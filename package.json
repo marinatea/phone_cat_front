@@ -4,9 +4,10 @@
   "description": "A description of your project",
   "main": "index.js",
   "scripts": {
-    "start": "mate-scripts start -l",
-    "build": "mate-scripts build",
-    "test": "mate-scripts test -l",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "lint-js": "mate-scripts lint -j",
     "lint-css": "mate-scripts lint -s",
