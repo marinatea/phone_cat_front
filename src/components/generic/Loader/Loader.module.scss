@@ -1,0 +1,22 @@
+@use '/src/constants/colors.module' as c;
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.loaderCircle {
+  border: 6px solid c.$elements;
+  border-top: 6px solid c.$secondary;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

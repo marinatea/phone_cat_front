@@ -1,0 +1,42 @@
+@font-face {
+  src: url('../../public/fonts/Mont-Bold.otf');
+  font-family: MontBold;
+}
+
+@font-face {
+  src: url('../../public/fonts/Mont-Regular.otf');
+  font-family: MontRegular;
+}
+
+@font-face {
+  src: url('../../public/fonts/Mont-SemiBold.otf');
+  font-family: MontSemiBold;
+}
+
+@mixin uppercase-font {
+  font-size: 12px;
+  line-height: 11px;
+  font-family: MontBold, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+@mixin button-font {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: MontSemiBold, sans-serif;
+  letter-spacing: 0;
+}
+
+@mixin body-font {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: MontRegular, sans-serif;
+  letter-spacing: 0;
+}
+
+@mixin small-font {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: MontSemiBold, sans-serif;
+  letter-spacing: 0;
+}

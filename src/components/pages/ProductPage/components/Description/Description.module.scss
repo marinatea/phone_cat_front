@@ -1,0 +1,58 @@
+@use '/src/utils/miscFonts.scss' as fonts;
+@use '/src/constants/colors.module.scss' as color;
+
+.title {
+  @include fonts.uppercase-font;
+
+  border-bottom: 1px solid color.$icons;
+  padding-bottom: 16px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.about {
+  grid-column: 1 / 13;
+  width: 100%;
+}
+
+.aboutItem {
+  margin-top: 32px;
+}
+
+.aboutItemTitle {
+  @include fonts.button-font;
+
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.aboutItemText {
+  @include fonts.button-font;
+
+  color: color.$secondary;
+}
+
+.tech {
+  grid-column: 14 / 25;
+}
+
+.techList {
+  margin-top: 32px;
+}
+
+.techItem {
+  @include fonts.button-font;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.techTitle {
+  color: color.$secondary;
+}

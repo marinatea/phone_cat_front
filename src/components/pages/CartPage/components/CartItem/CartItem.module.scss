@@ -1,0 +1,110 @@
+@use '/src/utils/mediaQueries.module.scss' as mQ;
+@use '/src/utils/miscFonts.scss' as mF;
+@use '/src/utils/desktopHeaderFonts.scss' as dHF;
+@import '/src/constants/colors.module';
+
+.cartItemContainer {
+  display: grid;
+  justify-content: center;
+
+  @include mQ.phone {
+    gap: 16px;
+    grid-template-columns: 1fr;
+
+    .cartItem {
+      border: 1px solid $elements;
+      padding: 12px;
+
+      .firstRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+        padding: 8px;
+
+        .closeIcon {
+          color: $elements;
+          align-items: center;
+          margin: 24px 16px 32px 0;
+          border: 0;
+        }
+
+        .phoneContainer {
+          height: 80px;
+          width: 80px;
+
+          .image {
+            height: 66px;
+            width: auto;
+            justify-content: center;
+          }
+        }
+
+        .name {
+          margin: 24px 16px 32px 0;
+          text-align: center;
+
+          @include mF.body-font;
+
+          color: $primary;
+          text-decoration: none;
+        }
+      }
+
+      .secondRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4px;
+
+        .counter {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          width: 96px;
+
+          .minusButton {
+            padding: 6px;
+            align-self: center;
+          }
+
+          .count {
+            padding: 6px;
+            text-align: center;
+
+            @include mF.body-font;
+
+            color: $primary;
+          }
+
+          .plusButton {
+            padding: 6px;
+            align-self: center;
+          }
+        }
+
+        .price {
+          @include dHF.h3-font;
+
+          width: 80px;
+          padding-left: 48px;
+        }
+      }
+    }
+  }
+
+  @include mQ.tablet {
+    .cartItem {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .count {
+        margin-top: 28px;
+      }
+
+      .price {
+        margin-top: 28px;
+      }
+    }
+  }
+}

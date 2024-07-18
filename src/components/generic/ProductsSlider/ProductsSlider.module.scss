@@ -1,0 +1,65 @@
+@use '/src/utils/mediaQueries.module.scss' as mQ;
+@use '/src/utils/mobileHeaderFonts.scss' as mHF;
+@use '/src/utils/desktopHeaderFonts.scss' as dHF;
+@use '/src/constants/colors.module.scss' as color;
+
+.productsSlider {
+  width: 100%;
+  overflow: hidden;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &Buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include mQ.desktop {
+      justify-content: center;
+    }
+  }
+
+  &__topButton {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    &.smallButtonDisabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__topTitle {
+    margin: 0;
+    color: color.$primary;
+
+    @include mHF.h1-font;
+
+    @include mQ.tablet {
+      @include dHF.h1-font;
+    }
+  }
+}

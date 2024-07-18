@@ -1,0 +1,120 @@
+@use '/src/utils/mediaQueries.module.scss' as mQ;
+@use '/src/utils/mobileHeaderFonts.scss' as mHF;
+@use '/src/utils/miscFonts.scss' as mF;
+@use '/src/utils/desktopHeaderFonts.scss' as dHF;
+@import '/src/constants/colors.module';
+
+.cartPage {
+  display: grid;
+  min-height: 100vh;
+  place-content: start center;
+
+  @include mQ.phone {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    margin: 0 16px;
+  }
+
+  @include mQ.tablet {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    padding: 0 24px;
+  }
+
+  @include mQ.desktop {
+    grid-template-columns: repeat(24, 32px);
+    column-gap: 16px;
+  }
+}
+
+@include mQ.phone {
+  .title {
+    margin-top: 24px;
+
+    @include mHF.h1-font;
+
+    grid-column: span 4;
+    color: $primary;
+  }
+
+  .cardsContainer {
+    grid-column: span 4;
+    margin-top: 32px;
+  }
+  .cartIsEmpty {
+    grid-column: span 4;
+    margin-top: 32px;
+    height: 50vh;
+  }
+
+  .cardContainer {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  .checkoutContainer {
+    grid-column: span 4;
+    margin-top: 32px;
+    padding: 24px;
+    text-align: center;
+
+    .infoContainer {
+      .cashInfo {
+        color: $primary;
+
+        @include dHF.h2-font;
+      }
+
+      .itemInfo {
+        color: $secondary;
+
+        @include mF.body-font;
+      }
+    }
+
+    .checkoutButton {
+      margin-top: 32px;
+      width: 100%;
+      height: 48px;
+    }
+  }
+}
+
+@include mQ.tablet {
+  .title {
+    margin-top: 16px;
+    
+    @include dHF.h1-font;
+
+    grid-column: span 12;
+  }
+
+  .cardsContainer {
+    grid-column: span 12;
+    margin-top: 32px;
+  }
+
+  .checkoutContainer {
+    grid-column: span 12;
+  }
+}
+
+@include mQ.desktop {
+  .title {
+    margin-top: 16px;
+
+    @include dHF.h1-font;
+
+    grid-column: span 24;
+  }
+
+  .cardsContainer {
+    grid-column: span 16;
+    margin-top: 32px;
+  }
+
+  .checkoutContainer {
+    grid-column: span 8;
+  }
+}

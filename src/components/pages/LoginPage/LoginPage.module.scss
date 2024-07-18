@@ -1,0 +1,104 @@
+@use '/src/constants/colors.module.scss' as color;
+@use '/src/utils/miscFonts.scss' as fonts;
+@use '/src/utils/desktopHeaderFonts.scss' as dHF;
+@use '/src/utils/mediaQueries.module.scss' as mQ;
+
+.main {
+  display: grid;
+  justify-content: center;
+
+  @include mQ.phone {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    margin: 0 16px;
+  }
+
+  @include mQ.tablet {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    padding: 0 24px;
+  }
+
+  @include mQ.desktop {
+    grid-template-columns: repeat(24, 32px);
+    column-gap: 16px;
+  }
+}
+
+.loginContainer {
+  grid-column: span 4;
+  margin: 10vh auto 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: color.$hoverBG;
+  padding: 20px;
+  width: 75%;
+
+  @include mQ.tablet {
+    grid-column: span 12;
+    width: 50%;
+  }
+
+  @include mQ.desktop {
+    grid-column: span 24;
+  }
+}
+
+.loginTitle {
+  margin-bottom: 20px;
+  color: color.$primary;
+  text-align: center;
+
+  @include dHF.h2-font;
+}
+
+.loginForm {
+  .formGroup {
+    margin-bottom: 15px;
+    padding-right: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: color.$primary;
+
+      @include fonts.body-font;
+    }
+
+    input {
+      border: 1px solid color.$elements;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100%;
+
+      @include fonts.body-font;
+    }
+  }
+
+  .loginButton {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: color.$positive;
+    padding: 10px;
+    width: 100%;
+    color: color.$white;
+
+    @include fonts.button-font;
+  }
+}
+
+.registerRedirectButton {
+  display: block;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: color.$negative;
+  padding: 10px;
+  width: 100%;
+  color: color.$white;
+  text-align: center;
+
+  @include fonts.button-font;
+}

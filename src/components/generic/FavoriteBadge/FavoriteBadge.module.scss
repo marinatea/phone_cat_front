@@ -1,0 +1,25 @@
+@use '/src/utils/mediaQueries.module.scss' as mQ;
+@use '/src/utils/miscFonts.scss' as fonts;
+@use '/src/constants/colors.module.scss' as color;
+
+.favoriteBadge {
+  display: none;
+
+  @include mQ.tablet {
+    @include fonts.body-font;
+
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 84px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: color.$negative;
+    width: 14px;
+    height: 14px;
+    color: color.$white;
+
+    font-size: 9px;
+  }
+}
