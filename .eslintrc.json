@@ -1,8 +1,10 @@
 {
-  "plugins": [
-    "jsx-a11y"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "jsx-a11y/label-has-associated-control": ["error"]
   }
 }
