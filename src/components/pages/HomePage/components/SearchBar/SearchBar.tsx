@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import Icon from '../../../../generic/Icon/Icon';
