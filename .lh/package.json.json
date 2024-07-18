@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1721323432281,
@@ -12,6 +12,18 @@
                 {
                     "date": 1721323438296,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,9 @@\n   \"scripts\": {\n     \"start\": \"react-scripts start\",\n     \"build\": \"react-scripts build\",\n     \"test\": \"react-scripts test\",\n-    \"eject\": \"react-scripts eject\"\n-    \"start\": \"mate-scripts start -l\",\n-    \"build\": \"mate-scripts build\",\n+    \"eject\": \"react-scripts eject\",\n     \"test\": \"mate-scripts test -l\",\n     \"style-format\": \"npx stylelint 'src/**/*.scss' --fix --allow-empty-input\",\n     \"lint-js\": \"mate-scripts lint -j\",\n     \"lint-css\": \"mate-scripts lint -s\",\n"
+                },
+                {
+                    "date": 1721323661998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,14 @@\n   \"version\": \"1.0.0\",\n   \"description\": \"A description of your project\",\n   \"main\": \"index.js\",\n   \"scripts\": {\n+      \"predeploy\": \"npm run build\",\n+  \"deploy\": \"mate-scripts deploy\",\n     \"start\": \"react-scripts start\",\n     \"build\": \"react-scripts build\",\n     \"test\": \"react-scripts test\",\n     \"eject\": \"react-scripts eject\",\n-    \"test\": \"mate-scripts test -l\",\n     \"style-format\": \"npx stylelint 'src/**/*.scss' --fix --allow-empty-input\",\n     \"lint-js\": \"mate-scripts lint -j\",\n     \"lint-css\": \"mate-scripts lint -s\",\n     \"format\": \"prettier --write './src/**/*.{ts,tsx}'\",\n"
+                },
+                {
+                    "date": 1721323670662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n   \"version\": \"1.0.0\",\n   \"description\": \"A description of your project\",\n   \"main\": \"index.js\",\n   \"scripts\": {\n-      \"predeploy\": \"npm run build\",\n-  \"deploy\": \"mate-scripts deploy\",\n+    \"predeploy\": \"npm run build\",\n+    \"deploy\": \"mate-scripts deploy\",\n     \"start\": \"react-scripts start\",\n     \"build\": \"react-scripts build\",\n     \"test\": \"react-scripts test\",\n     \"eject\": \"react-scripts eject\",\n@@ -16,10 +16,9 @@\n     \"format\": \"prettier --write './src/**/*.{ts,tsx}'\",\n     \"lint\": \"npm run style-format && npm run format && npm run lint-js && npm run lint-css\",\n     \"update\": \"mate-scripts update\",\n     \"postinstall\": \"npm run update && cypress verify\",\n-    \"predeploy\": \"npm run build\",\n-    \"deploy\": \"mate-scripts deploy\"\n+\n   },\n   \"author\": \"Mate Academy\",\n   \"license\": \"GPL-3.0\",\n   \"dependencies\": {\n"
+                },
+                {
+                    "date": 1721323675712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,9 @@\n     \"lint-css\": \"mate-scripts lint -s\",\n     \"format\": \"prettier --write './src/**/*.{ts,tsx}'\",\n     \"lint\": \"npm run style-format && npm run format && npm run lint-js && npm run lint-css\",\n     \"update\": \"mate-scripts update\",\n-    \"postinstall\": \"npm run update && cypress verify\",\n-\n+    \"postinstall\": \"npm run update && cypress verify\"\n   },\n   \"author\": \"Mate Academy\",\n   \"license\": \"GPL-3.0\",\n   \"dependencies\": {\n"
                 }
             ],
             "date": 1721323432281,

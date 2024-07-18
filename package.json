@@ -4,6 +4,8 @@
   "description": "A description of your project",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "mate-scripts deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -14,9 +16,7 @@
     "format": "prettier --write './src/**/*.{ts,tsx}'",
     "lint": "npm run style-format && npm run format && npm run lint-js && npm run lint-css",
     "update": "mate-scripts update",
-    "postinstall": "npm run update && cypress verify",
-    "predeploy": "npm run build",
-    "deploy": "mate-scripts deploy"
+    "postinstall": "npm run update && cypress verify"
   },
   "author": "Mate Academy",
   "license": "GPL-3.0",
