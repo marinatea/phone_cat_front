@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import './App.scss';
+import './reset.scss';
 
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
