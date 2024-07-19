@@ -20,6 +20,7 @@
   },
   "author": "Mate Academy",
   "license": "GPL-3.0",
+  "homepage": "http://marinatea.github.io/phone_cat_front",
   "dependencies": {
     "@clerk/clerk-react": "^5.2.8",
     "@cypress/react18": "^2.0.0",
