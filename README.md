@@ -23,6 +23,7 @@ Nice Gadget Store isn't just an online marketplace – it's a community for tech
 - **Clerk** - A powerful authentication and user management solution.
 - **Sequelize** - A promise-based Node.js ORM for PostgreSQL, MySQL, SQLite, and MSSQL.
 - **PostgreSQL** - A powerful, open-source object-relational database system.
+- **SCSS Module** - An extension of the CSS language that includes programming features such as variables, nested rules, selector inheritance, and the ability to import other SCSS files. SCSS is part of the Sass preprocessor and is fully compatible with CSS. SCSS Modules refer to a modular approach to styling, where styles are divided into smaller, more manageable modules.
 
 ## Getting Started
 ### Prerequisites
