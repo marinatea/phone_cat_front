@@ -33,7 +33,7 @@ npm install npm@latest -g
 Clone the repo
 
 ```bash
-git clone https://github.com/MaPaJBY/phone_catalog_front
+git clone https://github.com/marinatea/phone_cat_front
 ```
 Install NPM packages
 
