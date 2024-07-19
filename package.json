@@ -7,7 +7,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
-    "build": "your-build-command",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
