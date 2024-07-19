@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5649e4e9.css",
-    "main.js": "/static/js/main.f4add89f.js",
-    "static/media/Mont-Regular.otf": "/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
-    "static/media/Mont-SemiBold.otf": "/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
-    "static/media/Mont-Bold.otf": "/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
-    "index.html": "/index.html",
-    "main.5649e4e9.css.map": "/static/css/main.5649e4e9.css.map",
-    "main.f4add89f.js.map": "/static/js/main.f4add89f.js.map"
+    "main.css": "/phone_cat_front/static/css/main.a9d756ea.css",
+    "main.js": "/phone_cat_front/static/js/main.f4add89f.js",
+    "static/media/Mont-Regular.otf": "/phone_cat_front/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
+    "static/media/Mont-SemiBold.otf": "/phone_cat_front/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
+    "static/media/Mont-Bold.otf": "/phone_cat_front/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
+    "index.html": "/phone_cat_front/index.html",
+    "main.a9d756ea.css.map": "/phone_cat_front/static/css/main.a9d756ea.css.map",
+    "main.f4add89f.js.map": "/phone_cat_front/static/js/main.f4add89f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5649e4e9.css",
+    "static/css/main.a9d756ea.css",
     "static/js/main.f4add89f.js"
   ]
 }
