@@ -51,4 +51,3 @@ npm start
 - **Maryna Karpova** - [LinkedIn](https://www.linkedin.com/in/maryna-karpova/), [GitHub](https://github.com/marinatea)
 - **Yaryna Puhach** - [LinkedIn](https://www.linkedin.com/in/yaryna-puhach-029023269/), [GitHub](https://github.com/YarynaPuhach)
 
-[back to top](#back-to-top)
